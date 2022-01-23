@@ -1,5 +1,4 @@
-// const { app, BrowserWindow } = require('electron');
-// const path = require('path');
+const path = require('path');
 
 function speak(){
     var speak   = new SpeechSynthesisUtterance();
@@ -57,10 +56,11 @@ function fileOpen(){
     // window.location.href = 'https://qiita.com'
 
     //【PDFを開く】
-    window.location.href = './file/serverStartup.pdf'
+    // window.location.href = './file/serverStartup.pdf'
 
     //【テキストを出力】
-    // const str = 'こんにちは、今日は良い天気ですね！';
+    //const str = 'こんにちは、今日は良い天気ですね！';
+    // const str = document.getElementById('sample_text');
     // const blob = new Blob([str], {type: 'text/plain'});
 
     // const reader = new FileReader();
@@ -68,10 +68,13 @@ function fileOpen(){
     // reader.onload = function(){
     //     console.log(reader.result); 
     // };
+    // document.getElementById('sample_text').onchange(function(){
+    //     preview.value = document.getElementById('sample_text')
+    // })
 
-    // var str = String(reader.result);
-    // //【txtarea　に表示する】
-    // preview.value = reader.result;   
+    // var str = reader.result;
+    //【txtarea　に表示する】
+    // preview.value = 'わー';   
     // reader.readAsText(blob);
 
     //【PDFを開く（動作していない）】
@@ -95,5 +98,8 @@ function fileOpen(){
     // // If you dont provive options, default options will be use
     // var win = pdfview.showpdf(pdfurl, options);
     // win.show();
-
 }
+
+
+
+
