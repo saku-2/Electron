@@ -100,6 +100,8 @@ function fileOpen(){
     // win.show();
 }
 
-
-
+//「子画面」を開く
+function childOpen(){
+    window.open('child.html', '_blank'); // 新しいタブを開き、ページを表示
+}
 
