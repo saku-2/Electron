@@ -1,4 +1,4 @@
-const path = require('path');
+// const path = require('path');
 
 function speak(){
     var speak   = new SpeechSynthesisUtterance();
